@@ -1,3 +1,175 @@
-body {
+.page-body {
   margin: 0;
 }
+
+.page {
+  font-family: poppins, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 140%;
+  scroll-behavior: smooth;
+}
+
+.page-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page-menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* #region header */
+.header {
+  box-sizing: border-box;
+
+  height: 100vh;
+  background-image: url(../image/75d297df5101dbe1dd55f818092e4eb22a439eea.jpg);
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header-bottom {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 67vh;
+  padding: 0 20px;
+}
+
+.header-title {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  font-style: Bold;
+  font-size: 4rem;
+  line-height: 100%;
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region menu */
+
+.my-bike-logo {
+  display: flex;
+  height: 38px;
+  width: 130px;
+}
+
+.top-bar-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.top-bar {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  box-sizing: border-box;
+  color: #1d1d1d;
+  height: 100vh;
+  background-color: #c2c2c2;
+  opacity: 0;
+  pointer-events: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu-content {
+  padding-inline: 20px;
+}
+
+.menu-top {
+  margin-bottom: 32px;
+}
+
+.menu-nav {
+  margin-bottom: 40px;
+}
+
+.menu-phone-number {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.menu-book-a-ride {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+/* #endregion */
+
+/* #region icon */
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+}
+
+.icon-phone {
+  background-image: url(../image/Icon-Phone-call.png);
+}
+
+.icon-burger {
+  background-image: url(../image/Icon-Burger-menu.png);
+}
+
+.icon-close {
+  background-image: url(../image/Icon-Close.png);
+}
+
+/* #endregion */
+
+/* #region nav */
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* #endregion */
+
+/* #region footer */
+
+/* #endregion */
