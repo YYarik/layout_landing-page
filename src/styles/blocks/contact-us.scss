@@ -80,14 +80,25 @@
   }
 
   &__title {
+
     font-size: $fs-14;
     font-weight: $fw-400;
     margin-bottom: 8px;
+
+    &--gap{
+      margin-top: 24px;
+    }
   }
 
   &__value {
     font-size: $fs-16;
     font-weight: $fw-500;
-    margin-bottom: 24px;
+    text-decoration: none;
+    color: $second-text-color;
+    transition: color $effectDuration;
+
+    &:hover{
+      color: grey;
+    }
   }
 }

@@ -38,7 +38,7 @@
             </a>
             <div class="top-bar__icons">
               <a href="#" class="icon icon__phone"></a>
-              <a href="#" class="icon__phone--number">+1 234 5555-55-55</a>
+              <a href="tel:+1 234 5555-55-55" class="icon__phone--number">+1 234 5555-55-55</a>
               <a href="#menu" class="icon icon__burger"></a>
             </div>
           </div>
@@ -111,7 +111,7 @@
             <div class="recommended__products">
 
               <article class="product recommended__product">
-                <img src="/src/image/product-image/Screenshot 2022-01-14 at 11.12 1.png" alt="Sporty 4"
+                <img src="src/image/product-image/Screenshot 2022-01-14 at 11.12 1.jpg" alt="Sporty 4"
                 class="product__photo">
                 <h3 class="product__title">Sporty 4</h3>
                 <p class="product__category">The iconic frame brought to a new performance height as a sporty, active ride.</p>
@@ -119,7 +119,7 @@
               </article>
 
               <article class="product recommended__product">
-                <img src="/src/image/product-image/Screenshot 2022-01-14 at 11.12 2.png" alt="Ride in town ST"
+                <img src="src/image/product-image/Screenshot 2022-01-14 at 11.12 2.jpg" alt="Ride in town ST"
                 class="product__photo">
                 <h3 class="product__title">Ride in town ST</h3>
                 <p class="product__category">An open frame for an upright riding position as the most comfortable ride in town.</p>
@@ -127,7 +127,7 @@
               </article>
 
               <article class="product recommended__product">
-                <img src="/src/image/product-image/Screenshot 2022-01-14 at 11.12 3.png" alt="Agile ride 3"
+                <img src="src/image/product-image/Screenshot 2022-01-14 at 11.12 3.jpg" alt="Agile ride 3"
                 class="product__photo">
                 <h3 class="product__title">Agile ride 3</h3>
                 <p class="product__category">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
@@ -207,7 +207,7 @@
           <section class="contacts" id="contacts">
             <h2 class="contacts__title">Contact us</h2>
             <div class="contacts__field">
-              <form class="contacts__field--form">
+              <form class="contacts__field--form" onsubmit="this.reset(); return false;">
                 <div class="contact__name">
                   <input type="text" id="name"
                   name="user_name" placeholder="Name"
@@ -226,11 +226,12 @@
               </form>
               <div class="contacts__field--data">
                 <div class="contact__title">Phone</div>
-                <div class="contact__value">+1 234 5555-55-55</div>
-                <div class="contact__title">Email</div>
-                <div class="contact__value">hello@miami.com</div>
-                <div class="contact__title">Address</div>
-                <div class="contact__value">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</div>
+                <a href="tel:+1 234 5555-55-55" class="contact__value">+1 234 5555-55-55</a>
+                <div class="contact__title contact__title--gap">Email</div>
+                <a href="mailto:hello@miami.com" class="contact__value">hello@miami.com</a>
+                <div class="contact__title contact__title--gap">Address</div>
+                <a href="https://maps.app.goo.gl/qFrviJGDrXavY3Ph9" target="_blank"
+                class="contact__value">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</a>
               </div>
             </div>
 
